@@ -42,7 +42,7 @@ $(function () {
     ZBoltOctoScreen.ConnectionViewModel = function (parameters) {
         var self = this;
 
-        self.onAfterBinding = function () {
+        self.onStartupComplete = function () {
             var connection = $("#sidebar_plugin_klipper");
             connection.collapse("hide");
         }
